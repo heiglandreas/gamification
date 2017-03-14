@@ -1,0 +1,25 @@
+{
+    "name": "org_heigl/gamificationtest",
+    "description": "Test for gamification talk",
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Heigl",
+            "email": "andreas@heigl.org"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Org_Heigl\\Gamification\\" : "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Org_Heigl\\GamificationTest\\" : "tests/"
+        }
+    }
+}
+
