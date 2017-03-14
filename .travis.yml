@@ -8,3 +8,6 @@ before_script:
   - composer install
 script:
   - vendor/bin/phpunit --coverage-clover clover.xml
+after_script:
+  - vendor/bin/coveralls -v
+
