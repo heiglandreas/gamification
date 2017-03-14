@@ -2,7 +2,9 @@ language: php
 php: 
   - 7.0
 
+install:
+  - composer require --dev satooshi/php-coveralls
 before_script:
   - composer install
 script:
-  - vendor/bin/phpunit
+  - vendor/bin/phpunit --coverage-clover clover.xml

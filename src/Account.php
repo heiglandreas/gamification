@@ -10,4 +10,9 @@ class Account
     {
         $this->amount = $this->amount + $amount;
     }
+
+    public function sub(int $amount)
+    {
+        $this->amount = $this->amount - $amount;
+    }
 }

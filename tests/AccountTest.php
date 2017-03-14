@@ -7,6 +7,9 @@ use PHPUnit\Framework\TestCase;
 
 class AccountTest extends TestCase
 {
+    /**
+     * @covers Org_Heigl\Gamification\Account::add
+     */
     public function testAddingAmount()
     {
         $account = new Account();
